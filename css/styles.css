@@ -1,0 +1,217 @@
+*{
+    font-family: 'Handlee', cursive;
+  }
+  
+  body{
+    text-align: center;
+  }
+  
+  .nav-b{
+    background-color: #3A3845;
+    padding: .5em;
+  }
+  
+  .nav-btn{
+    border: solid beige 2.5px;
+    margin-right: 1.5em;
+    color: #EEEBDD;
+  }
+  
+  .nav-link{
+    color: aliceblue;
+  }
+  
+  .mash{
+    color: black;
+  }
+  
+  li .active{
+    font-weight: 800;
+    color: rgb(125, 162, 163);
+  }
+  
+  .nav-link:hover{
+    color: coral;
+  }
+  
+  .veni-photo{
+    width: 4em;
+  }
+  
+  .click-here{
+    color: rgb(117, 59, 38);
+  }
+  
+  .top-container {
+    background-color: #EEEBDD;
+    padding: 2em 0 0;
+  }
+  
+  .pat{
+    font-family: 'Patrick Hand', cursive;
+  }
+  
+  .space{
+    background-color: #EEEBDD;
+    display: flex;
+    justify-content: center;
+    padding: 2em 0 8em;
+  }
+  
+  .middle-container {
+    background-color: #D8B6A4;
+    padding: 1em 0 1em;
+  }
+  
+  .veni-pic{
+    width: 12em;
+    padding: 1em 0 1.5em;
+  }
+  
+  .about{
+    line-height: 2em;
+  }
+  
+  .contact-me, .cont-learning, .work-life{
+    width: 10em;
+    height: 10em;
+    border-radius: 100%;
+  }
+  
+  .bottom-container {
+    background-color: #630000;
+    padding: 2em;
+    color: aliceblue;
+  }
+  
+  .fira{
+    font-family: 'Fira Sans', sans-serif;
+  }
+  
+  .ligi{
+    font-family: 'Fira Sans', sans-serif;
+    text-decoration: none;
+    color: aliceblue;
+  }
+  
+  .ligi:hover{
+    color: bisque;
+  }
+  
+  a, small{
+    color: beige;
+    text-decoration: none;
+  }
+  
+  small:hover{
+    color: tomato;
+  }
+  
+  .form-col{
+    display: flex;
+    justify-content: center;
+    margin: 1em 0 1em 0;
+  }
+  
+  .form-class{
+    width: 100%;
+    padding: 0 5em;
+  }
+  
+  .fz-small{
+    font-size: small;
+  }
+  
+  /* Styles for Work */
+  .work{
+    width: 80%;
+  }
+  
+  .telus-pic{
+    height: 80%;
+    width: 80%;
+  }
+  
+  .acn-pic{
+    width: 30em;
+    margin: 2em 1em 10em;
+  }
+  
+  .devops-pic{
+    height: 15em;
+    margin: 0 0 1em;
+  }
+  
+  hr {
+    background-color: transparent ;
+    border: dashed 4px #49166d;
+    width: 8em;
+    margin: auto;
+    margin-bottom: 3em;
+    margin-top: 3em;
+    }
+  
+  .ssyb{
+    width: 10em;
+    margin-top: 3em;
+  }
+  
+  .skills-container{
+    background-color: #FFEFEF;
+    padding: 6em 0 7em;
+  }
+  
+  .car-div{
+    background-color: #FFFDDE;
+  }
+  
+  .carousel-inner{
+    width: 95%;
+  }
+  
+  .carousel-item { padding: 7% 10% }
+  
+  .inter{
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .skills-div{
+    background-color: #FFEFEF;
+  }
+  
+  .car-skills{
+    padding-bottom: 10em;
+  }
+  
+  .carousel-caption{
+    top: 25em;
+    color: #3A3845;
+  }
+  
+  /* Styles for Non-Work */
+  
+  .nonwork{
+    width: 20%;
+  }
+  
+  .space-nonwork{
+    background-color: #EEEBDD;
+    display: flex;
+    justify-content: center;
+    padding: 1em 0 10em;
+  }
+  
+  .worklife-container{
+    background-color: #FFFDDE;
+    padding: 9em 0 9em;
+  }
+  
+  .ty-div{
+    border-radius: 100%;
+  }
+  
+  .wl-imgs{
+    grid-row: auto;
+    width: 5em;
+  }
+  
