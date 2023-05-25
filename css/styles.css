@@ -1,217 +1,390 @@
 *{
-    font-family: 'Handlee', cursive;
+  font-family: 'Handlee', cursive;
+}
+
+body{
+  text-align: center;
+}
+
+.nav-b{
+  background-color: #3A3845;
+  padding: .5em;
+}
+
+.nav-btn{
+  border: solid beige 2.5px;
+  margin-right: 1.5em;
+  color: #EEEBDD;
+}
+
+.nav-link{
+  color: aliceblue;
+}
+
+.mash{
+  color: black;
+}
+.mash:hover{
+  color: tomato;
+}
+
+li .active{
+  font-weight: 800;
+  color: rgb(162, 221, 223);
+}
+
+.navbar-nav .nav-link.active{
+  font-weight: 800;
+  color: tomato;
+}
+
+.nav-link:hover{
+  color: rgb(238, 157, 35);
+}
+
+.veni-photo{
+  width: 4em;
+}
+
+.click-here{
+  color: rgb(117, 59, 38);
+}
+
+.top-container {
+  display: flex;
+  background-color: #EEEBDD;
+  justify-content: center;
+  height: 100%;
+  padding-right: 1em;
+  position: relative;
+}
+
+.main-cont{
+  display: flex;
+  position: relative;
+}
+
+.pat{
+  font-family: 'Patrick Hand', cursive;
+}
+
+.astro-div{
+  position: relative;
+}
+
+.cv-div-index{
+  position: absolute;
+  bottom: 10em;
+  width: 20em;
+  left: 20%;
+  padding: 0 .5em 0 .5em;
+}
+
+.cv-div-index:hover{
+  background-color: rgb(235, 141, 124);
+  border-radius: 60px 45px 30px 15px/15px 30px 45px 60px;
+}
+
+.cv-div{
+  position: absolute;
+  bottom: .1em;
+  left: 25%;
+  padding: 0 1em 0 1em;
+}
+
+.cv-div:hover{
+  background-color: rgb(235, 141, 124);
+  border-radius: 60px 45px 30px 15px/15px 30px 45px 60px;
+}
+
+.cv-veni{
+  color: black;
+  font-family: 'Monofett', monospace;
+  font-size: small;
+}
+
+.cv-icon{
+  width: 3em;
+}
+
+.space{
+  background-color: #EEEBDD;
+  display: flex;
+  justify-content: center;
+  padding: 2em 0 5em;
+}
+
+
+
+.middle-container {
+  background-color: #E5FEF5;
+  padding: .8em 1em 1.5em 1em;
+  width: 85%;
+  height: fit-content;
+  border-radius: 10px 40px;
+  border-style: inset;
+  position: relative;
+  box-shadow: 20px 20px rgba(0,0,0,.15);
+  transition: all .4s ease;
+}
+
+.middle-container:hover {
+  border-radius: 0% 0% 50% 50% / 0% 0% 5% 5% ;
+  box-shadow: 10px 10px rgba(0,0,0,.25);
+}
+
+.veni-pic{
+  width: 10em;
+  padding: 1em 0 1em;
+}
+
+.contact-me, .cont-learning, .work-life{
+  width: 10em;
+  height: 10em;
+  border-radius: 100%;
+}
+
+.bottom-container {
+  background-color: #630000;
+  padding: 2em;
+  color: aliceblue;
+}
+
+.fira{
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.ligi{
+  font-family: 'Fira Sans', sans-serif;
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.ligi:hover{
+  color: bisque;
+}
+
+a, small{
+  color: beige;
+  text-decoration: none;
+}
+
+small:hover{
+  color: tomato;
+}
+
+.form-col{
+  display: flex;
+  justify-content: center;
+}
+
+.form-class{
+  width: 100%;
+  padding: 0 5em;
+}
+
+.fz-small{
+  font-size: small;
+}
+
+/* Styles for Work */
+.work{
+  width: 90%;
+  --animate-duration: 8s;
+}
+
+.telus-pic{
+  height: 80%;
+  width: 80%;
+}
+
+.acn-pic{
+  height: 5em;
+  border-radius: 50%;
+}
+
+.acn-pic:hover{
+  border: #630000 dashed 5px;
+}
+
+.telus-logo{
+  width: 5em;
+  height: 5em;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.telus-logo:hover{
+  border: #42e057 dashed 5px;
+}
+
+.devops-pic{
+  height: 15em;
+  margin: 0 0 1em;
+}
+
+hr {
+  background-color: transparent ;
+  border: dashed 4px #49166d;
+  width: 8em;
+  margin: auto;
+  margin-bottom: 3em;
+  margin-top: 3em;
   }
+
+.ssyb, .ssgb{
+  width: 5em;
+  margin-top: 1em;
+}
+
+.ssgb:hover, .ssyb:hover{
+  animation: headShake; 
+  animation-duration: 2s; 
+}
+
+.skills-container{
+  background-color: #FFEFEF;
+  padding-bottom: 2.5em;
+  position: relative;
+}
+
+.skills-bg{
+  opacity: 10%;
+  position: absolute;
+  object-fit: cover;
+}
+
+
+
+.work-middle-container{
+  background-color: #d1e3e4;
+  padding: 0 0 2em;
+}
+
+.car-div{
+  height: 20em;
+}
+
+.car-div::-webkit-scrollbar {
+  width: 12px;
+}
+
+.car-div::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+  border-radius: 10px;
+}
+
+.car-div::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+.car-div::-webkit-scrollbar-thumb:hover {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.8);
+}
+
+
+.carousel-inner{
+  width: 80%;
+}
+
+.carousel-inner-udemy{
+  width: 70%;
+}
+
+.font-one{
+  font-family: 'Mate', serif;
+}
+
+.font-two{
+  font-family: 'Roboto Slab', serif;
+}
+
+.skills-div{
+  background-color: #FFEFEF;
+}
+
+.car-skills{
+  padding-bottom: 1em;
+}
+
+.carousel-caption-pn{
+  bottom: 21.4em;
+  color: #3A3845;
+}
+
+.carousel-caption-daniella{
+  bottom: 20.4em;
+  color: #3A3845;
+}
+
+.carousel-div{
+  background-color: #efcccc;
+}
+/* Styles for Non-Work */
+
+.space-nonwork{
+  background-image: linear-gradient(to right, rgba(0, 179, 255, 0.735) , rgb(41, 76, 67));
+  height: 25em;
+  position: relative;
+}
+
+.nonwork{
+  width: 20%;
+}
+
+.floating { 
+  animation-name: floating;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+@keyframes floating {
+  0% { transform: translate(0,  0px); }
+  50%  { transform: translate(0, 150px); }
+  100%   { transform: translate(0, -0px); }   
+}
+
+.float1{
+  position: absolute;
+  top: 5em;
+  left: 5em;
+}
+
+.float2{
   
-  body{
-    text-align: center;
-  }
+}
+
+.float3{
   
-  .nav-b{
-    background-color: #3A3845;
-    padding: .5em;
-  }
+}
+
+.float4{
   
-  .nav-btn{
-    border: solid beige 2.5px;
-    margin-right: 1.5em;
-    color: #EEEBDD;
-  }
-  
-  .nav-link{
-    color: aliceblue;
-  }
-  
-  .mash{
-    color: black;
-  }
-  
-  li .active{
-    font-weight: 800;
-    color: rgb(125, 162, 163);
-  }
-  
-  .nav-link:hover{
-    color: coral;
-  }
-  
-  .veni-photo{
-    width: 4em;
-  }
-  
-  .click-here{
-    color: rgb(117, 59, 38);
-  }
-  
-  .top-container {
-    background-color: #EEEBDD;
-    padding: 2em 0 0;
-  }
-  
-  .pat{
-    font-family: 'Patrick Hand', cursive;
-  }
-  
-  .space{
-    background-color: #EEEBDD;
-    display: flex;
-    justify-content: center;
-    padding: 2em 0 8em;
-  }
-  
-  .middle-container {
-    background-color: #D8B6A4;
-    padding: 1em 0 1em;
-  }
-  
-  .veni-pic{
-    width: 12em;
-    padding: 1em 0 1.5em;
-  }
-  
-  .about{
-    line-height: 2em;
-  }
-  
-  .contact-me, .cont-learning, .work-life{
-    width: 10em;
-    height: 10em;
-    border-radius: 100%;
-  }
-  
-  .bottom-container {
-    background-color: #630000;
-    padding: 2em;
-    color: aliceblue;
-  }
-  
-  .fira{
-    font-family: 'Fira Sans', sans-serif;
-  }
-  
-  .ligi{
-    font-family: 'Fira Sans', sans-serif;
-    text-decoration: none;
-    color: aliceblue;
-  }
-  
-  .ligi:hover{
-    color: bisque;
-  }
-  
-  a, small{
-    color: beige;
-    text-decoration: none;
-  }
-  
-  small:hover{
-    color: tomato;
-  }
-  
-  .form-col{
-    display: flex;
-    justify-content: center;
-    margin: 1em 0 1em 0;
-  }
-  
-  .form-class{
-    width: 100%;
-    padding: 0 5em;
-  }
-  
-  .fz-small{
-    font-size: small;
-  }
-  
-  /* Styles for Work */
-  .work{
-    width: 80%;
-  }
-  
-  .telus-pic{
-    height: 80%;
-    width: 80%;
-  }
-  
-  .acn-pic{
-    width: 30em;
-    margin: 2em 1em 10em;
-  }
-  
-  .devops-pic{
-    height: 15em;
-    margin: 0 0 1em;
-  }
-  
-  hr {
-    background-color: transparent ;
-    border: dashed 4px #49166d;
-    width: 8em;
-    margin: auto;
-    margin-bottom: 3em;
-    margin-top: 3em;
-    }
-  
-  .ssyb{
-    width: 10em;
-    margin-top: 3em;
-  }
-  
-  .skills-container{
-    background-color: #FFEFEF;
-    padding: 6em 0 7em;
-  }
-  
-  .car-div{
-    background-color: #FFFDDE;
-  }
-  
-  .carousel-inner{
-    width: 95%;
-  }
-  
-  .carousel-item { padding: 7% 10% }
-  
-  .inter{
-    font-family: 'Inter', sans-serif;
-  }
-  
-  .skills-div{
-    background-color: #FFEFEF;
-  }
-  
-  .car-skills{
-    padding-bottom: 10em;
-  }
-  
-  .carousel-caption{
-    top: 25em;
-    color: #3A3845;
-  }
-  
-  /* Styles for Non-Work */
-  
-  .nonwork{
-    width: 20%;
-  }
-  
-  .space-nonwork{
-    background-color: #EEEBDD;
-    display: flex;
-    justify-content: center;
-    padding: 1em 0 10em;
-  }
-  
-  .worklife-container{
-    background-color: #FFFDDE;
-    padding: 9em 0 9em;
-  }
-  
-  .ty-div{
-    border-radius: 100%;
-  }
-  
-  .wl-imgs{
-    grid-row: auto;
-    width: 5em;
-  }
-  
+}
+
+.worklife-container{
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  background-color: #FFFDDE;
+  padding: 1em 0 0;
+}
+
+input:hover,textarea:hover{
+  background-color: #efcccc;
+}
+
+.ty-div{
+  border-radius: 100%;
+}
+
+.wl-imgs{
+  grid-row: auto;
+  width: 5em;
+}
+
+

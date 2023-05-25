@@ -28,109 +28,193 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100&family=Handlee&family=Inter:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mate&family=Roboto+Slab&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <div class="container-fluid">
   
     <div class="row nav-b sticky-top navbar navbar-expand-lg">
-      <div class="col-2 text-start ms-3">
-        <img class="veni-photo" src="images/veni-cropped.png" alt="Veni Di Gonzales' Photo">
-      </div>
-
       <button class="nav-btn navbar-toggler btn btn-secondary col-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <small>Menu</small>
       </button>
-  
-      <div class="col-5 collapse navbar-collapse justify-content-end" id="navbarNav">
+
+      <div class="col-5 collapse navbar-collapse justify-content-center" id="navbarNav">
         <ul class="navbar-nav nav my-auto">
-          <li class="nav-item mx-2">
-            <a class="nav-link" aria-current="page" href="index.html">About Me</a>
+          <li class="nav-item mx-2 animate__animated animate__rotateIn">
+            <img class="veni-photo" src="images/veni-cropped.png" alt="Veni Di Gonzales' Photo">
           </li>
-          <li class="nav-item mx-2">
-            <a class="nav-link" href="work.html">Work</a>
+          <li class="nav-item mx-2 my-auto animate__animated animate__fadeInRight">
+            <a class="nav-link font-two" aria-current="page" href="index.html">About Me</a>
           </li>
-          <li class="nav-item mx-2">
-            <a class="nav-link active" href="nonwork.html">Non-Work</a>
+          <li class="nav-item mx-2 my-auto animate__animated animate__fadeInRight">
+            <a class="nav-link font-two" href="work.html">Work</a>
+          </li>
+          <li class="nav-item mx-2 my-auto animate__animated animate__fadeInRight">
+            <a class="nav-link active font-two" href="nonwork.html">Non-Work</a>
           </li>
         </ul>
       </div>
     </div>
     
-  
-
-    <div class="row top-container">
-      <h1 class="display-5">Non-work</h1>
-      <h5 class="animate__animated animate__fadeInUp">Values, Beliefs, Hobbies</h5>
-    </div>
 
     <div class="row space-nonwork">
 
-        <div class="col nonwork">
-          <img class=" mt-2 mb-5 animate__animated animate__fadeInLeft" src="images/nonwork.png" alt="astronaut background image">
-          <figure class="animate__animated animate__fadeInDown">
-            <blockquote class="blockquote">
-              <p>"Be kind and be useful."</p>
-            </blockquote>
-            <figcaption class="blockquote-footer">
-              Barack Obama
-            </figcaption>
-          </figure>
+      <h5 class="mt-4 font-two animate__animated animate__fadeInUp">Values, Beliefs, Hobbies</h5>
+
+      <div>
+        <!-- Button1 to trigger modal 1-->
+        <img class="float1 floating" src="./images/moon.png" type="button" data-bs-toggle="modal" data-bs-target="#modal1">
+
+        <!-- Button2 to trigger modal 2-->
+        <img class="float2" src="./images/star.png" type="button" data-bs-toggle="modal" data-bs-target="#modal2">
+
+        <!-- Button3 to trigger modal 3-->
+        <img class="float3" src="./images/planet2.png" type="button" data-bs-toggle="modal" data-bs-target="#modal3">
+
+        <!-- Button4 to trigger modal 4-->
+        <img class="float4" src="./images/planet3.png" type="button" data-bs-toggle="modal" data-bs-target="#modal4">
+
+        <!-- Modal 1 : Moon-->
+        <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="modal1Label">Modal title</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div>
+                    <iframe src="https://giphy.com/embed/l2SpXaJA67JaSqSxq" width="300" height="300" frameBorder="0" class="giphy-embed cont-learning" allowFullScreen></iframe>
+                  </div>
+            
+                  <h3 class="fw-bold mt-1">Continuous Learning</h3>
+            
+                  <div class="about inter d-flex justify-content-center">
+                    <p class="col-5 inter">
+                      I am mainly interested in these 3 topics:  <br>
+                      <strong class="inter">Web Development / App Development, <br> IoT (Internet of Things)</strong> and 
+                      <strong class="inter">Process Improvement</strong>. <br>
+                      I believe that knowledge in all three areas would help us achieve great things.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+
+      <!-- Modal 2 : Star -->
+      <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="modal2Label">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="col nonwork">
+                <figure class="animate__animated animate__fadeInDown">
+                  <blockquote class="blockquote">
+                    <p>"Be kind and be useful."</p>
+                  </blockquote>
+                  <figcaption class="blockquote-footer">
+                    Barack Obama
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal 3 : Planet 2-->
+      <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="modal3Label">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="row worklife-container">
+                <div>
+                  <iframe src="https://giphy.com/embed/4oJFCfrRbJsg00RDTP" width="200" height="200" frameBorder="0" class="giphy-embed work-life" allowFullScreen></iframe>
+                </div>
+                
+          
+                <h3 class="fw-bold mt-1">Work-Life Balance</h3>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 4 : Planet 3-->
+    <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="modal4Label" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="modal4Label">Modal title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row worklife-container">
+              <div class="about inter d-flex justify-content-center">
+                <div class="col-6">
+                  <p class="inter">
+                    Here are some of my interests outside of work: 
+                  </p>
+                    <div class="row d-flex justify-content-center">
+                      <img class="wl-imgs" src="images/tv.png" alt="TV">
+                    </div>
+                    <strong class="inter">TV Shows: </strong>
+                    <br>
+                    NCIS, Grey's Anatomy, Criminal Minds, Forensic Files,
+                    <br>
+                    Rick and Morty, Crime Documentaries in General
+                    <br>
+                    <br>
+                    <div class="row d-flex justify-content-center">
+                      <img class="wl-imgs" src="images/arts.png" alt="Arts and Crafts">
+                    </div>
+                    <strong class="inter">Hobbies: </strong><br>
+                    <em class="inter small fw-bold">Disclaimer on my hobbies: I like doing it, but does not mean I'm actually good at it.</em>
+                    <br>
+                    Poetry, Photography, Playing the guitar
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    </div>
+
+      
       
     </div>
   
-    <div class="row middle-container">
-      <div>
-        <iframe src="https://giphy.com/embed/l2SpXaJA67JaSqSxq" width="300" height="300" frameBorder="0" class="giphy-embed cont-learning" allowFullScreen></iframe>
-      </div>
+    
 
-      <h3 class="fw-bold mt-1">Continuous Learning</h3>
-
-      <div class="about inter d-flex justify-content-center">
-        <p class="col-5 inter">
-          I am mainly interested in these 3 topics:  <br>
-          <strong class="inter">Web Development / App Development, <br> IoT (Internet of Things)</strong> and 
-          <strong class="inter">Process Improvement</strong>. <br>
-          I believe that knowledge in all three areas would help us achieve great things.
-        </p>
-      </div>
-    </div>
-
-    <div class="row worklife-container">
-      <div>
-        <iframe src="https://giphy.com/embed/4oJFCfrRbJsg00RDTP" width="200" height="200" frameBorder="0" class="giphy-embed work-life" allowFullScreen></iframe>
-      </div>
-      
-
-      <h3 class="fw-bold mt-1">Work-Life Balance</h3>
-      
-      <div class="about inter d-flex justify-content-center">
-        <div class="col-6">
-          <p class="inter">
-            Here are some of my interests outside of work: 
-          </p>
-            <div class="row d-flex justify-content-center">
-              <img class="wl-imgs" src="images/tv.png" alt="TV">
-            </div>
-            <strong class="inter">TV Shows: </strong>
-            <br>
-            NCIS, Grey's Anatomy, Criminal Minds, Forensic Files,
-            <br>
-            Rick and Morty, Crime Documentaries in General
-            <br>
-            <br>
-            <div class="row d-flex justify-content-center">
-              <img class="wl-imgs" src="images/arts.png" alt="Arts and Crafts">
-            </div>
-            <strong class="inter">Hobbies: </strong><br>
-            <em class="inter small fw-bold">Disclaimer on my hobbies: I like doing it, but does not mean I'm actually good at it.</em>
-            <br>
-            Poetry, Photography, Playing the guitar
-        </div>
-      </div>
-    </div>
+    
 
     <div class="row bottom-container">
       <div>
