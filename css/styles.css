@@ -21,10 +21,14 @@ body{
   color: aliceblue;
 }
 
-.mash{
+.nav-link:hover{
+  color: rgb(238, 157, 35);
+}
+
+.mashup-link{
   color: black;
 }
-.mash:hover{
+.mashup-link:hover{
   color: tomato;
 }
 
@@ -36,10 +40,6 @@ li .active{
 .navbar-nav .nav-link.active{
   font-weight: 800;
   color: tomato;
-}
-
-.nav-link:hover{
-  color: rgb(238, 157, 35);
 }
 
 .veni-photo{
@@ -79,29 +79,12 @@ li .active{
 
 .astro-div{
   position: relative;
-}
-
-.cv-div-index{
-  height: max-content;
-  padding: 0 .5em 0 .5em;
-  width: fit-content;
-}
-
-.cv-div-index:hover{
-  background-color: rgb(235, 141, 124);
-  border-radius: 60px 45px 30px 15px/15px 30px 45px 60px;
+  padding: 0;
 }
 
 .cv-div{
   position: absolute;
   bottom: .1em;
-  left: 25%;
-  padding: 0 1em 0 1em;
-}
-
-.cv-div:hover{
-  background-color: rgb(235, 141, 124);
-  border-radius: 60px 45px 30px 15px/15px 30px 45px 60px;
 }
 
 .cv-veni{
@@ -110,13 +93,46 @@ li .active{
   font-size: small;
 }
 
-.cv-veni-index{
-  color: black;
-  font-family: 'Monofett', monospace;
+.iframe-div{
+  position: relative;
+}
+
+.cv-div-index{
+  position: absolute;
+  bottom: 85%;
+  right: 1%;
+}
+
+.texttip{
+  background-color: burlywood;
+  position: absolute;
+  top: 15%;
+  right: 1%;
+  font-size: small;
+  padding: 0 1em;
+  border-radius: 15px 5px;
+}
+
+.texttip-work{
+  background-color: burlywood;
+  font-size: small;
+  padding: 0 1em;
+  border-radius: 15px 5px;
+  width: fit-content;
+  visibility: hidden;
+}
+
+.cv-div-index:hover{
+  filter: drop-shadow(2px 3px 10px rgba(0, 0, 0, .5));
 }
 
 .cv-icon{
-  width: 3em;
+  padding-top: 2em;
+  width: 5em;
+}
+
+.cv-icon:hover{
+  filter: drop-shadow(2px 3px 10px rgba(0, 0, 0, .5));
 }
 
 .space{
@@ -124,9 +140,8 @@ li .active{
   display: flex;
   justify-content: center;
   padding: 2em 0 5em;
+  position: relative;
 }
-
-
 
 .middle-container {
   background-color: #E5FEF5;
@@ -138,7 +153,7 @@ li .active{
   position: relative;
   box-shadow: 20px 20px rgba(0,0,0,.15);
   transition: all .4s ease;
-  margin-bottom: 5em;
+  margin-bottom: 3em;
 }
 
 .middle-container:hover {
@@ -149,6 +164,11 @@ li .active{
 .veni-pic{
   width: 11em;
   padding: 1em 0 1em;
+  filter: drop-shadow(2px 3px 10px rgba(0, 0, 0, .5));
+}
+
+.veni-pic:hover{
+  transform: scale(1.1);
 }
 
 .contact-me, .cont-learning, .work-life{
@@ -177,11 +197,6 @@ li .active{
   color: bisque;
 }
 
-a, small{
-  color: beige;
-  text-decoration: none;
-}
-
 small:hover{
   color: tomato;
 }
@@ -193,14 +208,12 @@ small:hover{
 
 .form-class{
   width: 100%;
-  padding: 0 5em;
 }
 
 .fz-small{
   font-size: small;
 }
 
-/* Styles for Work */
 .work{
   width: 90%;
   --animate-duration: 8s;
@@ -231,14 +244,9 @@ small:hover{
   border: #42e057 dashed 5px;
 }
 
-.devops-pic{
-  height: 15em;
-  margin: 0 0 1em;
-}
-
 hr {
   background-color: transparent ;
-  border: dashed 4px #49166d;
+  border: dashed 4px #160522;
   width: 8em;
   margin: auto;
   margin-bottom: 3em;
@@ -272,11 +280,6 @@ hr {
   padding: 0 0 2em;
 }
 
-.background-img{
-  background-image: url("../images/background-img.jpg");
-  
-}
-
 .car-div{
   height: 20em;
 }
@@ -298,7 +301,6 @@ hr {
 .car-div::-webkit-scrollbar-thumb:hover {
   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.8);
 }
-
 
 .carousel-inner{
   width: 80%;
@@ -337,7 +339,6 @@ hr {
 .carousel-div{
   background-color: #efcccc;
 }
-/* Styles for Non-Work */
 
 .space-nonwork{
   background-image: linear-gradient(to right, rgba(0, 179, 255, 0.735) , rgb(109, 3, 102));
@@ -354,11 +355,26 @@ hr {
   animation-duration: 5s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
-  margin-left: -50em;
+  margin-left: 1em;
   margin-top: -15em;
 }
 
 @keyframes floating {
+  0% { transform: translate(0,  0px); }
+  50%  { transform: translate(0, 150px); }
+  100%   { transform: translate(0, -0px); }   
+}
+
+.floating-cv { 
+  animation-name: floating;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 1%;
+  margin-top: -15em;
+}
+
+@keyframes floating-cv {
   0% { transform: translate(0,  0px); }
   50%  { transform: translate(0, 150px); }
   100%   { transform: translate(0, -0px); }   
