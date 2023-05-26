@@ -59,6 +59,15 @@ li .active{
   position: relative;
 }
 
+.work-top-container {
+  display: flex;
+  background-color: #f0e09a;
+  justify-content: center;
+  height: 100%;
+  padding-right: 1em;
+  position: relative;
+}
+
 .main-cont{
   display: flex;
   position: relative;
@@ -73,11 +82,9 @@ li .active{
 }
 
 .cv-div-index{
-  position: absolute;
-  bottom: 10em;
-  width: 20em;
-  left: 20%;
+  height: max-content;
   padding: 0 .5em 0 .5em;
+  width: fit-content;
 }
 
 .cv-div-index:hover{
@@ -103,12 +110,17 @@ li .active{
   font-size: small;
 }
 
+.cv-veni-index{
+  color: black;
+  font-family: 'Monofett', monospace;
+}
+
 .cv-icon{
   width: 3em;
 }
 
 .space{
-  background-color: #EEEBDD;
+  background-color: #f0e09a;
   display: flex;
   justify-content: center;
   padding: 2em 0 5em;
@@ -126,6 +138,7 @@ li .active{
   position: relative;
   box-shadow: 20px 20px rgba(0,0,0,.15);
   transition: all .4s ease;
+  margin-bottom: 5em;
 }
 
 .middle-container:hover {
@@ -134,7 +147,7 @@ li .active{
 }
 
 .veni-pic{
-  width: 10em;
+  width: 11em;
   padding: 1em 0 1em;
 }
 
@@ -254,11 +267,14 @@ hr {
   object-fit: cover;
 }
 
-
-
 .work-middle-container{
   background-color: #d1e3e4;
   padding: 0 0 2em;
+}
+
+.background-img{
+  background-image: url("../images/background-img.jpg");
+  
 }
 
 .car-div{
@@ -324,8 +340,8 @@ hr {
 /* Styles for Non-Work */
 
 .space-nonwork{
-  background-image: linear-gradient(to right, rgba(0, 179, 255, 0.735) , rgb(41, 76, 67));
-  height: 25em;
+  background-image: linear-gradient(to right, rgba(0, 179, 255, 0.735) , rgb(109, 3, 102));
+  height:100vh;
   position: relative;
 }
 
@@ -338,8 +354,8 @@ hr {
   animation-duration: 5s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
-  margin-left: 30px;
-  margin-top: 5px;
+  margin-left: -50em;
+  margin-top: -15em;
 }
 
 @keyframes floating {
@@ -348,22 +364,17 @@ hr {
   100%   { transform: translate(0, -0px); }   
 }
 
-.float1{
-  position: absolute;
-  top: 5em;
-  left: 5em;
-}
-
-.float2{
-  
-}
-
 .float3{
-  
+  position: absolute;
+  right: 25em;
+  top:1em;
 }
 
-.float4{
-  
+.float5{
+  position: absolute;
+  right: 1em;
+  top: 5em;
+  left: 25em;
 }
 
 .worklife-container{
@@ -387,4 +398,17 @@ input:hover,textarea:hover{
   width: 5em;
 }
 
+.nasa-bg{
+  opacity: 15%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
 
+.galaxy-bg{
+  background-image: url("../images/galaxy.jpg");
+}
+
+.modal5-bg{
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0.735) , rgb(109, 3, 102));
+}
