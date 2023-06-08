@@ -327,13 +327,16 @@ hr {
   padding-bottom: 1em;
 }
 
+.carousel-caption{
+  bottom: 0;
+}
+
 .carousel-caption-pn{
-  bottom: 21.4em;
+  bottom: 21em;
   color: #3A3845;
 }
 
 .carousel-caption-daniella{
-  bottom: 20.4em;
   color: #3A3845;
 }
 
