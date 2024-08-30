@@ -17,6 +17,11 @@ body{
   color: #EEEBDD;
 }
 
+.nav-btn-nw{
+  margin-left: .7em;
+  border: solid beige 4px;
+}
+
 .nav-link{
   color: aliceblue;
 }
