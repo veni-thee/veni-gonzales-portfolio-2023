@@ -433,17 +433,11 @@ input:hover,textarea:hover{
   background-image: url("../images/galaxy.jpg");
 }
 
-.modal {
-  z-index: 1050;
-  position: relative;
-}
-
-
 .modal5-bg{
   background-image: linear-gradient(to right, rgba(255, 0, 0, 0.735) , rgb(109, 3, 102));
 }
 
-.background-container{
+/* .background-container{
 	background: url(https://i.ibb.co/87GbbFP/2799006.jpg) no-repeat;
     background-size: cover;
     height: 100%;
@@ -452,7 +446,7 @@ input:hover,textarea:hover{
     top: 0;
     left: 0;
     z-index: -3;
-}
+} */
 .bg:before {
   content: "";
   width: 100%;
