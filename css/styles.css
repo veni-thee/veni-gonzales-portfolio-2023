@@ -350,8 +350,10 @@ hr {
 }
 
 .space-nonwork{
+  background-image: linear-gradient(to right, rgba(0, 179, 255, 0.735) , rgb(109, 3, 102));
   margin-top: 2em;
   height:100vh;
+  position: relative;
 }
 
 .nonwork{
@@ -488,7 +490,7 @@ input:hover,textarea:hover{
       opacity: 0.5;
   }
 } */
-.star-field {
+/* .star-field {
   position: fixed;
   top: 0;
   left: 0;
@@ -525,4 +527,4 @@ input:hover,textarea:hover{
 }
 .star-field .layer:nth-child(3) {
   animation: sf-fly-by-3 5s linear infinite;
-}
+} */
