@@ -433,6 +433,12 @@ input:hover,textarea:hover{
   background-image: url("../images/galaxy.jpg");
 }
 
+.modal {
+  z-index: 1050;
+  position: relative;
+}
+
+
 .modal5-bg{
   background-image: linear-gradient(to right, rgba(255, 0, 0, 0.735) , rgb(109, 3, 102));
 }
