@@ -490,7 +490,8 @@ input:hover,textarea:hover{
       opacity: 0.5;
   }
 } */
-/* .star-field {
+
+.star-field {
   position: fixed;
   top: 0;
   left: 0;
@@ -527,4 +528,4 @@ input:hover,textarea:hover{
 }
 .star-field .layer:nth-child(3) {
   animation: sf-fly-by-3 5s linear infinite;
-} */
+}
